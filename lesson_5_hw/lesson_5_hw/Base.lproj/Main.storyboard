@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="ipad9_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,11 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKd-Ok-BDl">
-                                <rect key="frame" x="20" y="107" width="280" height="50"/>
+                                <rect key="frame" x="244" y="107" width="280" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="5Z8-2C-wH3"/>
@@ -33,10 +33,52 @@
                                     <color key="titleColor" red="1" green="0.16134511439999999" blue="0.2147341962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bhK-Jq-egH">
+                                <rect key="frame" x="244" y="162" width="280" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="BaU-SA-wIV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="mcf-q0-Cix"/>
+                                    <constraint firstAttribute="height" constant="50" id="zGW-aD-Dzh"/>
+                                </constraints>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" red="1" green="0.0099468241870000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkT-eD-DUc">
+                                <rect key="frame" x="244" y="894" width="280" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GhY-6n-iae"/>
+                                    <constraint firstAttribute="width" constant="280" id="sRr-zq-4eH"/>
+                                </constraints>
+                                <state key="normal" title="Login with Google">
+                                    <color key="titleColor" red="1" green="0.16134511439999999" blue="0.2147341962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.98514410620000004" green="0.1095526616" blue="0.1234868422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOV-zC-VMR">
+                                <rect key="frame" x="244.5" y="949" width="280" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0G7-xW-Obb"/>
+                                    <constraint firstAttribute="width" constant="280" id="184-O4-sk5"/>
+                                </constraints>
+                                <state key="normal" title="Login with Facebook">
+                                    <color key="titleColor" red="1" green="0.0099468241870000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.26770512194473339" green="0.48788855820105825" blue="0.45990055548975384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.45808953551765214" green="0.64841683201058209" blue="0.64510350521757598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bhK-Jq-egH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20L-mT-ufv"/>
+                            <constraint firstItem="vOV-zC-VMR" firstAttribute="top" secondItem="gkT-eD-DUc" secondAttribute="bottom" constant="5" id="5qz-TT-LJY"/>
                             <constraint firstItem="ZKd-Ok-BDl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="6Bs-ka-7ku"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vOV-zC-VMR" secondAttribute="bottom" constant="25" id="Cca-fb-UVy" userLabel="Bottom Layout Guide.top = Login with Facebook.bottom + 50"/>
+                            <constraint firstItem="vOV-zC-VMR" firstAttribute="centerX" secondItem="gkT-eD-DUc" secondAttribute="centerX" id="DU2-w5-Isq"/>
+                            <constraint firstItem="bhK-Jq-egH" firstAttribute="top" secondItem="ZKd-Ok-BDl" secondAttribute="bottom" constant="5" id="U1m-a7-JlX" userLabel="Sign up.top =  10"/>
+                            <constraint firstItem="gkT-eD-DUc" firstAttribute="centerX" secondItem="bhK-Jq-egH" secondAttribute="centerX" id="bJP-Fq-sah"/>
                             <constraint firstItem="ZKd-Ok-BDl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yNJ-eL-uQu"/>
                         </constraints>
                     </view>
